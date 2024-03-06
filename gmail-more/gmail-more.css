@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 20% 55% 20% 5%;
+    grid-template-areas: 
+        'header header header header'
+        'sidebar mail settings apps';
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: header;
+    background-color: #808080;
+    padding-right: 1300px;
+}
+
+.header img {
+    width: 80px;
+}
+
+.header div {
+    padding: 5px;
+    width: 165px;
+}
+
+.header button {
+    border: none;
+    border-radius: 1px;
+    color: grey;
+    background-color: white;
+    padding: 5px 60px;
+}
+
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    padding-bottom: 150px;
+    row-gap: 10px;
+}
+
+.sidebar button {
+    border: 1px solid #808080;
+    background-color: #E9E9ED;
+    padding: 15px 5px;
+    border-radius: 3px;
+}
+
+.sidebar #meet {
+    border: 2px solid #808080;
+}
+
+.sidebar #chat {
+    border: 2px solid #808080;
+}
+
+.mail {
+    display: grid;
+    grid-area: mail;
+}
+
+.mail div {
+    border: 1px solid #cdcdcd;
+    background-color: #F5F6F7;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: #E3E5E8;
+    padding-top: 15px;
+}
+
+.settings button {
+    border: 1px solid #808080;
+    background-color: #E9E9ED;
+    padding: 15px 5px;
+    border-radius: 3px;
+}
+
+.apps {
+    grid-area: apps;
+}
