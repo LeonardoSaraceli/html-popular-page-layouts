@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F2EF;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 7% 93%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 
+        'header header header'
+        'sidebar feed menu';
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: white;
+    grid-template-columns: 5% 5%;
+}
+
+.header img {
+    padding-left: 100px;
+    margin-top: 6px;
+    width: 35px;
+}
+
+.header button {
+    margin-top: 10px;
+    margin-left: 75px;
+    padding-right: 150px;
+    color: grey;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #979797;
+    background-color: #F3F2EF;
+}
+
+.sidebar {
+    display: grid;
+    margin-top: 10px;
+    margin-left: 100px;
+    grid-area: sidebar;
+    background-color: #FFC0CB;
+    grid-template-rows: 10% 10% 10%;
+}
+
+.sidebar div {
+    border-radius: 5px;
+    margin: 4px;
+    background-color: white;
+}
+
+.feed {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: grid;
+    grid-area: feed;
+    background-color: #ADD8E6;
+    grid-template-rows: 10% 35%;
+}
+
+.feed div {
+    border-radius: 5px;
+    margin: 4px;
+    background-color: white;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-right: 100px;
+    display: grid;
+    grid-area: menu;
+    background-color: #FFA07A;
+    grid-template-rows: 25% 25% 25%;
+}
+
+.menu div {
+    border-radius: 5px;
+    margin: 4px;
+    background-color: white;
+}
