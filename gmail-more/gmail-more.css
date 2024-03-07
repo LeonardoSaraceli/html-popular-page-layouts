@@ -39,6 +39,7 @@
     display: grid;
     grid-area: sidebar;
     padding-bottom: 150px;
+    row-gap: 10px;
 }
 
 .sidebar button {
